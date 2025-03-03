@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+:root{
+    --bg-color: #1f242d;
+    --main-color: #0ef;
+}
+body{
+    background-color: var(--bg-color);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+        .shop{
+
+    background-color: var(--bg-color);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 1rem;
+}
+.box{
+    height: 200px;
+    color: var(--text-color);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: all .20s ease-in-out;
+    color: white;
+}
+.box:hover{
+    transform: scale(1.03);
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 2px var(--main-color);
+}
+.btnz{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #323946;
+    border: 2px solid white;
+    padding: 0px;
+    margin: 0px;
+    padding: 10px;
+    z-index: 5555;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgba(0, 206, 221, 0.932);
+}
+#side{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+#count{
+        font-size: 17px;
+    }
+
+@media (max-width:500px) {
+    .btn{
+        width: 70px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .btnz{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #count{
+        font-size: 15px;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="btnz">
+        <button class="btn" id="start">Start</button>
+        <h3 id="count" style="color: white;">Colors : 0</h3>
+        <button class="btn" id="stop">Stop</button>
+    </div>
+    <div class="shop">
+        <!-- <div class="box"> 
+            <h1 class="nam">color name</h1>
+        </div> -->
+    </div>
+    <button id="side" class="btn">See More</button>
+    
+    <script>
+
+const randomColor = function (){
+        let color = "#";
+        let hex = "0123456789ABCDEF";
+        for(let i = 0; i<6; i++) {
+            color += hex[Math.floor(Math.random()*16)];
+        }
+
+        return color;
+    }
+    const more = document.getElementById('side');
+    let count = 0
+   
+    let stopinterval;
+    let go = function(){
+        stopinterval = setInterval(()=>{
+            const note = document.createElement("div");
+            note.classList.add('note');
+            const clr =  randomColor()
+            note.innerHTML = `<div  style="background-color: ${clr};"  class="box">
+    <h1 class="nam">${clr}</h1>
+    <h1 class="nam" style="color: black;" >${clr}</h1>
+</div>`;
+document.querySelector('.shop').appendChild(note)
+            
+            console.log(randomColor());
+            count++
+            if(count === 50 || count === 100 || count === 150 || count === 200 || count === 250 || count === 300 || count === 350 || count === 400 || count === 450 || count === 500){
+        clearInterval(stopinterval);
+        stopinterval = null
+        more.style.display = 'block'
+    }
+            document.getElementById('count').innerHTML = `Colors : ${count}`
+        },200)
+    }
+
+    document.getElementById('stop').addEventListener('click',()=>{
+        clearInterval(stopinterval);
+        stopinterval = null
+
+    })
+
+    const cha = setTimeout(go,500)
+
+    document.getElementById('start').addEventListener('click',()=>{
+more.style.display = 'none'
+go();
+})
+
+more.addEventListener('click',()=>{
+
+    go()
+    more.style.display = 'none'
+})
+    console.log(randomColor());
+    
+    </script>
+</body>
+</html>
