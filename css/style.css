@@ -2,6 +2,7 @@
     box-sizing: border-box;
     transition: all 0.3s ease;
 }
+
 .col-md-6{
     padding: 60px;
     height: 600px;

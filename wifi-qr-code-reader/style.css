@@ -12,8 +12,8 @@
         z-index: -1;
         transition: all 0.3s ease;
       }
-       body {
-        display: flex;
+       /* body { */
+        /* display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
@@ -22,11 +22,19 @@
         box-sizing: border-box;
         text-align: center;
         background: rgb(255, 255, 255);
-    }
+    } */
     .container {
         width: 100%;
         max-width: 500px;
         margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
     }
     
     .container h1 {
@@ -34,6 +42,7 @@
     }
     
     .section {
+        width: 90%;
         background-color: rgba(58, 60, 73, 0.87);
         padding: 50px 30px;
         border: 1.5px solid #b2b2b2;
@@ -100,8 +109,11 @@
     }
     #ttable th{
         padding: 5px;
-        margin: 5px;
+        margin: 15px;
         width: 30%;
+    }
+    #ttable td{
+        margin-left: 10px;
     }
     #cbwork{
         display: none;

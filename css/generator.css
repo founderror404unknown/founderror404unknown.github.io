@@ -1,0 +1,89 @@
+.boxx{
+    background-color: rgba(62, 64, 82, 0.459);
+    color: white;
+    margin: 15px;
+}
+.boxx form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.boxx input{
+    margin: 10px;
+    padding: 5px;
+}
+.boxx form h1{
+    color: white;
+}
+.boxx form p{
+    margin-left: 10px;
+    font-size: smaller;
+}
+
+.sbox-s{
+    width: 95%;
+    height: 60%;
+}
+.gen-btn{
+    background-color: rgb(62, 64, 82);
+    border: 0.5px solid white;
+    border-radius: 2px;
+    color: white;
+    width: 30%;
+    transition: all .40s ease;
+}
+.gen-btn:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.btnz{
+    display: flex;
+    justify-content: space-between;
+}
+.ad-box{
+    height: 40%;
+    border: 2px solid black;
+    width: 100%;
+    margin: 10px;
+    width: 95%;
+    background-color: white;
+
+
+}
+.result-box{
+    padding: 10px;
+    height: 150px;
+}
+#msg{
+    font-size: 10px;
+    color: white;
+}
+.hy-btn{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+.hy-btn a{
+    cursor: pointer;
+    color: white;
+}
+
+.hy-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width:991px) {
+    .result-box{
+        height: 200px;
+        margin: 10px;
+    }
+    #other-hy{
+        display: none;
+    }
+  }
