@@ -82,8 +82,12 @@
     .result-box{
         height: 200px;
         margin: 10px;
+        width: 95%;
     }
     #other-hy{
         display: none;
+    }
+    .ad-box{
+        width: 95%;
     }
   }
