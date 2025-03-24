@@ -70,15 +70,15 @@ function makefooter(){
              <div class="row">
             <div class="col-lg-4 order-lg-2 f-ar">
                  <ul class=" f-ar col-dir">
-  <li><a href="https://www.cb2learning.com/about-us-page-generator">About Us Page Generator</a></li>
-  <li><a href="https://www.cb2learning.com/contact-us-page-generator">Contact Us Page Generator</a></li>
-  <li><a href="https://www.cb2learning.com/privacy-policy-page-generator">Privacy Policy Page Generator</a></li>
-  <li><a href="https://www.cb2learning.com/disclaimer-page-generator">Disclimar Page Generator</a></li>
+  <li><a href="https://tools.cb2learning.com/about-us-page-generator">About Us Page Generator</a></li>
+  <li><a href="https://tools.cb2learning.com/contact-us-page-generator">Contact Us Page Generator</a></li>
+  <li><a href="https://tools.cb2learning.com/privacy-policy-page-generator">Privacy Policy Page Generator</a></li>
+  <li><a href="https://tools.cb2learning.com/disclaimer-page-generator">Disclimar Page Generator</a></li>
             </div>
             <div class="col-lg-4 order-lg-1">
                 <ul class=" f-ar col-dir">
-   <li><a href="https://www.cb2learning.com/qr-code-reader">QR Code Scanner</a></li>
-  <li><a href="https://www.cb2learning.com/random-color-generator-hex">Rendom Color Generator</a></li>
+   <li><a href="https://tools.cb2learning.com/qr-code-reader">QR Code Scanner</a></li>
+  <li><a href="https://tools.cb2learning.com/random-color-generator-hex">Rendom Color Generator</a></li>
   <li><a href="#">Files Downloader</a></li>
   <li><a href="#">Image Compressor</a></li>
                   </ul>
