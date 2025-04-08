@@ -23,6 +23,11 @@
   z-index: -1;
   transition: all 0.3s ease;
 }
+body,html{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 .nav {
   z-index: 299;
   position: fixed;
@@ -179,6 +184,7 @@ a:hover{
 /* +++++++++++++++++++++  Start Footer  +++++++++++++++++++++++++++ */
 
 footer{
+  width: 100%;
   padding-top: 50px;
   background-color: rgba(62, 64, 82, 0.911);
 

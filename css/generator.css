@@ -1,3 +1,8 @@
+body,html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
 .boxx{
     background-color: rgba(62, 64, 82, 0.459);
     color: white;
